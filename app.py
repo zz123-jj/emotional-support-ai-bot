@@ -125,8 +125,7 @@ class ChatInterface:
                 chatbot_ui = gr.Chatbot(
                     label="对话窗口",
                     height=400,
-                    show_label=True,
-                    avatar_images=(None, "🤖")
+                    show_label=True
                 )
                 
                 with gr.Row():

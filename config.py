@@ -21,7 +21,8 @@ class Config:
     
     # 向量数据库配置
     CHROMA_PERSIST_DIRECTORY = os.getenv("CHROMA_PERSIST_DIRECTORY", "./chroma_db")
-    EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+    # 使用 all-MiniLM-L6-v2 - 最小的模型（约80MB），下载更快
+    EMBEDDING_MODEL = "all-MiniLM-L6-v2"
     
     # 对话配置
     MAX_CONVERSATION_HISTORY = int(os.getenv("MAX_CONVERSATION_HISTORY", "10"))

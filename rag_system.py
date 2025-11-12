@@ -5,8 +5,10 @@ RAG系统 - 检索增强生成
 from typing import List, Dict, Tuple
 import chromadb
 from chromadb.config import Settings
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_openai import OpenAIEmbeddings
+try:
+    from langchain.text_splitter import RecursiveCharacterTextSplitter
+except ImportError:
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
 from sentence_transformers import SentenceTransformer
 import json
 import os
