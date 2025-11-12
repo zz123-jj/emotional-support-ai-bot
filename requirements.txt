@@ -1,0 +1,23 @@
+# Core dependencies
+openai==1.12.0
+python-dotenv==1.0.0
+
+# RAG and Vector Database
+langchain==0.1.9
+langchain-openai==0.0.6
+chromadb==0.4.22
+sentence-transformers==2.3.1
+
+# Data processing
+pandas==2.2.0
+numpy==1.26.3
+
+# UI Framework
+gradio==4.16.0
+
+# Database
+sqlalchemy==2.0.25
+
+# Utilities
+pydantic==2.6.0
+tiktoken==0.5.2
